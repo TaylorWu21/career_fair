@@ -1,0 +1,22 @@
+<h1>Devpoint Swag</h1>
+
+	<table>
+		<tr>
+			<td>First Name</td>
+			<td>Last Name</td>
+			<td>Email</td>
+			<td>Phone Number</td>
+			<td>Major</td>
+		</tr>
+		<%= @students.by_name.each do |s| %>
+			<tr>
+				<td><%= s.first_name %></td>
+				<td><%= s.last_name %></td>
+				<td><%= s.email %></td>
+				<td><%= s.phone %></td>
+				<td><%= s.major %></td>
+			</tr>
+		<% end %>
+	</table>
+
+<%= link_to "Student Form", new_student_path %>
