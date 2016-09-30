@@ -8,7 +8,7 @@
 			<td>Phone Number</td>
 			<td>Major</td>
 		</tr>
-		<%= @students.by_name.each do |s| %>
+		<% @students.by_name.each do |s| %>
 			<tr>
 				<td><%= s.first_name %></td>
 				<td><%= s.last_name %></td>

@@ -1,0 +1,15 @@
+@import "materialize/components/color";
+$secondary-color: #8168B1 !default;
+@import "materialize";
+
+body {
+	font-family: 'Avenir Next' !important;
+}
+
+img {
+	width: 325px;
+}
+
+::-webkit-input-placeholder {
+   color: #B4B4B4;
+}
