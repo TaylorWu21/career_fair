@@ -1,22 +1,36 @@
-<h1>Devpoint Swag</h1>
+<h2 class="center">DPL Interest Form Submissions</h2>
+<br/>
 
-	<table>
-		<tr>
-			<td>First Name</td>
-			<td>Last Name</td>
-			<td>Email</td>
-			<td>Phone Number</td>
-			<td>Major</td>
-		</tr>
-		<% @students.by_name.each do |s| %>
-			<tr>
-				<td><%= s.first_name %></td>
-				<td><%= s.last_name %></td>
-				<td><%= s.email %></td>
-				<td><%= s.phone %></td>
-				<td><%= s.major %></td>
-			</tr>
-		<% end %>
-	</table>
+	<div class="container">
+		<table class="highlight">
+			<thead>
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Email</th>
+					<th>Phone Number</th>
+					<th>Major</th>
+					<th>Wants More Info</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<% @students.by_name.each do |s| %>
+					<tr>
+						<td><%= s.first_name %></td>
+						<td><%= s.last_name %></td>
+						<td><%= s.email %></td>
+						<td><%= s.phone %></td>
+						<td><%= s.major %></td>
+						<% if s.contact_me == true %>
+							<td>Yes!</td>
+						<% else %>
+							<td>No</td>
+						<% end %>
+					</tr>
+				<% end %>
+			</tbody>
+		</table>
+	</div>
 
 <%= link_to "Student Form", new_student_path %>

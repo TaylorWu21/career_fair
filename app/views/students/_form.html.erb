@@ -26,6 +26,12 @@
 			<%= f.text_field :major, :placeholder => "Major" %>
 		</div>
 	</div>
-			<%= f.submit "Submit", :class => "btn" %>
+	
+	<div class="row">
+		<%= f.check_box :contact_me, id:"contact_me"%>
+		<%= f.label "Want to know more about coding?", for: "contact_me", id: 'contact_me'%>
+	</div>
+
+	<%= f.submit "Submit", :class => "btn" %>
 	<% end %>
 </div>

@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20160929213911) do
     t.string   "email"
     t.string   "phone"
     t.string   "major"
+    t.boolean  "contact_me"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
