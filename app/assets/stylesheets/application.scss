@@ -4,6 +4,8 @@ $secondary-color: #8168B1 !default;
 
 body {
 	font-family: 'Avenir Next' !important;
+  background-image:url("http://res.cloudinary.com/doan/image/upload/v1475541995/DPL_ylxbnv.jpg");
+  background-size: 100% 100%;
 }
 
 img {
@@ -12,6 +14,16 @@ img {
 
 ::-webkit-input-placeholder {
    color: #B4B4B4;
+}
+
+.container {
+    width: 50% !important;
+} 
+
+.form-style {
+  padding: 50px;
+  background-color: #FFF;
+  opacity: 0.9;
 }
 
 .alert {

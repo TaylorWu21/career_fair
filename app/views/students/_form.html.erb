@@ -1,35 +1,36 @@
-<div class="center-align container">
+<div class="center-align container form-style" style="margin-top: 81px;">
+	<h1 class="center" style="color: #747474;">Student Form</h1>
 	<%= form_for @student do |f| %>
 
-  <div class="row">
-		<div class="input-field col s8 offset-s2">
-			<%= f.text_field :first_name, :placeholder => "First Name", :required => true %>
+  
+		<div class="input-field col s6 offset-s4">
+			<%= f.label :first_name %>
+			<%= f.text_field :first_name, :required => true %>
 		</div>
-	</div>
 
-	<div class="row">
-		<div class="input-field col s8 offset-s2">
-			<%= f.text_field :last_name, :placeholder => "Last Name", :required => true %>
+	
+		<div class="input-field col s6 offset-s4">
+			<%= f.label :last_name %>
+			<%= f.text_field :last_name, :required => true %>
 		</div>
-	</div>
 
-	<div class="row">
-		<div class="input-field col s8 offset-s2">
-			<%= f.text_field :email, :placeholder => "Email", :required => true %>
+	
+		<div class="input-field col s6 offset-s4">
+			<%= f.label :email %>
+			<%= f.text_field :email, :required => true %>
 		</div>
-	</div>
 
-	<div class="row">
-		<div class="input-field col s8 offset-s2">
-			<%= f.text_field :phone, :placeholder => "Phone", :required => true %>
+	
+		<div class="input-field col s6 offset-s4">
+			<%= f.label :phone %>
+			<%= f.text_field :phone, :required => true %>
 		</div>
-	</div>
 
-	<div class="row">
-		<div class="input-field col s8 offset-s2">
-			<%= f.text_field :major, :placeholder => "Major" %>
+	
+		<div class="input-field col s6 offset-s4">
+			<%= f.label :major %>
+			<%= f.text_field :major %>
 		</div>
-	</div>
 	
 	<div class="row">
 		<%= f.check_box :contact_me, id:"contact_me"%>
